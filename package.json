@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "adocao",
   "version": "0.0.0",
   "private": true,
@@ -12,6 +13,20 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
+=======
+  "name": "projeto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+>>>>>>> f4a8d20daded6681b1a5fadd1d8107e543d8a987
     "nodemon": "^2.0.16"
   }
 }
