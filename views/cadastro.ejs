@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Projeto Adoção</title>
+    <meta charset="UTF-8">
+    <meta name="vierport" content="width=device-width, initial-scale=1.0";>
+    <link rel="stylesheet" href="stylesheets\style.css">
+  </head>
+  <body>
+   <div class="cadastro">
+        <img src="" alt="logoCadastro">
+        <h1>Faça seu cadastro</h1><br>
+        <p>É necessario ter um cadastro para divulgar ou adotar um pet.</p>
+       <div class="caixaCadastro">
+        <form>
+            <label for="nome">Nome*</label><br>
+            <input type="text" id="nome" name="nome"><br>
+            <label for="telefone">Telefone*</label><br>
+            <input type="text" id="telefone" name="telefone"><br>
+                <div class="estado"><label for="estado">Estado*</label><br>
+                <select id="estado" name="estado">
+                <option disabled="disabled" selected="selected" value="">Selecione o Estado</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+            </select><br>
+            <label for="cidade">Cidade*</label><br>
+            <input type="text" id="cidade" name="cidade"><br>
+            <label for="nascimento">Data de nascimento*</label><br>
+            <input type="date" id="nascimento" name="nascimento"><br>
+            </div>
+            <label for="email">Email*</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="senha">Senha*</label><br>
+            <input type="password" id="senha" name="senha"><br><br>
+            <input class="btnCadastro" type="submit" value="registrar">
+          </form> 
+        <div class="CadastroRedes">
+            <button class="btnGoogleCadastro">Conectar com o  Google</button>
+            <button class="btnFacebookCadastro">Conectar com o Facebook</button>
+        </div>
+        <div class="CadastroCad">
+            <a href="#">Já possui Login ?</a>
+            <a href="#">Esqueceu a senha ?</a>
+        </div>
+       </div>
+          
+       </div>
+  </body>
+</html>

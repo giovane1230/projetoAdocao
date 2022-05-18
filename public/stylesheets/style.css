@@ -1,0 +1,534 @@
+* {
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Raleway;
+}
+a {
+  text-decoration: none;
+}
+
+a:hover{
+  color: rgb(112, 201, 24);
+}
+/*header*/
+.navbar {
+  width: 100%;
+  background-color: #008CBA;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px 20px 50px;
+  box-shadow: 0 0px 16px rgb(0, 0, 0);
+  position: relative;
+}
+
+.navlink {
+width: 50%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+
+.navbt1 {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-left: 10px;
+    border: solid 1px black;
+}
+
+.navbt1:hover {
+  background-color: #00B7FF;
+  transition-duration: 500ms;
+}
+
+.navbt2 {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 7px;
+    border: solid 1px black;
+}
+
+.navbt2:hover {
+  background-color: #00B7FF;
+  transition-duration: 500ms;
+}
+
+.menucl {
+  display: none;
+}
+
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover {background: #555;}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+ul li ul li { 
+  background: #555; 
+  display: block; 
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background: #666;}
+
+/*footer*/
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #00B7FF;
+  padding: 20px 20px 20px 20px;
+}
+
+.mapa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 80%;
+  padding-bottom: 20px;
+}
+
+.redesfooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+  width: 40%;
+  padding: 20px 0 20px 0;
+  position: relative;
+}
+
+.footerlogo {
+  position: absolute;
+  right: 0;
+}
+/*index*/
+.main {
+  display: flex;
+  background-color: aquamarine;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.idxbt {
+  padding: 50px 0 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+.idxbt1 {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.idxbt1:hover {
+background-color: #00B7FF;
+transition-duration: 500ms;
+}
+
+.idxbt2 {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 16px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.idxbt2:hover {
+background-color: #00B7FF;
+transition-duration: 500ms;
+}
+
+.bemvindos {
+ padding-bottom: 50px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-evenly;
+}
+
+.novos {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+}
+
+.erro {
+  background-color: red;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bterro {
+  background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 7px;
+    border: solid 1px black;
+}
+
+img[alt~="imgerro"] {
+  margin: 50px 0 50px 0;
+}
+
+.novo1 {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    margin-bottom: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 7px;
+    padding-bottom: 100px;
+}
+
+.novo2 {
+  background-color: #008CBA;
+    border: none;
+    color: white;
+    margin-bottom: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 7px;
+    padding-bottom: 100px;
+}
+
+.novo3 {
+  background-color: #008CBA;
+    border: none;
+    color: white;
+    margin-bottom: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 7px;
+    padding-bottom: 100px;
+}
+
+.novo4 {
+  background-color: #008CBA;
+    border: none;
+    color: white;
+    margin-bottom: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 7px;
+    padding-bottom: 100px;
+}
+
+img[alt~="novo1"] {
+ border-radius: 7px;
+}
+img[alt~="novo2"] {
+  border-radius: 7px;
+}
+img[alt~="novo3"] {
+  border-radius: 7px;
+}
+img[alt~="novo4"] {
+  border-radius: 7px;
+}
+
+.btvermais {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 16px 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+/*quemsomos*/
+.agente {
+  background-color: #1581a5;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+}
+.calaborador1 {
+  background-color: #008CBA;
+    border: none;
+    color: white;
+    margin-bottom: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 7px;
+    padding-bottom: 20px;
+}
+
+.calaborador2 {
+  background-color: #008CBA;
+    border: none;
+    color: white;
+    margin-bottom: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 7px;
+    padding-bottom: 20px;
+}
+
+.calaborador3 {
+  background-color: #008CBA;
+    border: none;
+    color: white;
+    margin-bottom: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 7px;
+    padding-bottom: 20px;
+}
+
+/*login*/
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 100px 0 100px 0;
+}
+
+.caixalogin {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px 20px 50px 20px;
+  background-color: gray;
+  margin-top: 50px;
+  border-radius: 7px;
+}
+
+.entrarRedes {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 0 50px 0;
+}
+
+.btnLogin {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 16px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.btnGoogle {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 16px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.btnFacebook {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 16px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.loginCad {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*Cadastro*/
+.cadastro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 100px 0 100px 0;
+}
+
+.caixaCadastro {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px 20px 50px 20px;
+  background-color: gray;
+  margin-top: 50px;
+  border-radius: 7px;
+}
+
+.CadastroRedes {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 0 50px 0;
+}
+
+.btnCadastro {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 16px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.btnGoogleCadastro {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 16px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.btnFacebookCadastro {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 16px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.CadastroCad {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 900px) {
+  .menucl {
+    display: block;
+  }
+  .navlink {
+    display: none;
+  }
+  .idxbt {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  img[alt~="navlogo"] {
+    display: none;
+  }
+}
