@@ -10,8 +10,9 @@ a {
   text-decoration: none;
 }
 
-a:hover{
-  color: rgb(112, 201, 24);
+.navlink a:hover{
+  color: rgb(24, 77, 201);
+  border-bottom: black 2px solid;
 }
 /*header*/
 .navbar {
@@ -33,6 +34,7 @@ flex-direction: row;
 justify-content: space-between;
 align-items: center;
 }
+
 
 .navbt1 {
     background-color: #008CBA;
@@ -75,6 +77,7 @@ align-items: center;
   transition-duration: 500ms;
 }
 
+/*menu*/
 .menucl {
   display: none;
 }
@@ -85,7 +88,7 @@ ul {
   padding: 0;
 }
 ul li {display: inline-block;}
-ul li:hover {background: #555;}
+ul li:hover {background: white;}
 ul li:hover ul {display: block;}
 ul li ul {
   position: absolute;
@@ -93,11 +96,13 @@ ul li ul {
   display: none;
 }
 ul li ul li { 
-  background: #555; 
+  background: white; 
   display: block; 
+  text-align: center;
+  padding: 10px; 
 }
 ul li ul li a {display:block !important;} 
-ul li ul li:hover {background: #666;}
+ul li ul li:hover {background: white;}
 
 /*footer*/
 .footer {
@@ -133,6 +138,11 @@ ul li ul li:hover {background: #666;}
   right: 0;
 }
 /*index*/
+img[alt~="idxImg1"] {
+  border-radius: 7px;
+  max-width: 90%;
+}
+
 .main {
   display: flex;
   background-color: aquamarine;
@@ -517,11 +527,121 @@ img[alt~="novo4"] {
   flex-direction: column;
 }
 
+/*colabore*/
+.imgColabore{
+  padding: 50px 10px 0 10px;
+  background-color: lime;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 7px;
+  width: 100%;
+}
+
+img[alt~="colaboreImg"] {
+  border-radius: 7px;
+  max-width: 90%;
+}
+
+.colabore {
+  background-color: lime;
+  display: flex;
+align-items: center;
+flex-direction: column;
+text-align: center;
+}
+
+.colaboreMain {
+display: flex;
+align-items: center;
+flex-direction: column;
+text-align: center;
+padding: 50px 0 100px 0;
+max-width: 90%;
+}
+
+ .ajuda1 {
+padding: 50px 100px 20px 100px;
+border-bottom: 1px black dashed;
+}
+
+.btajuda1 {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 16px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 7px;
+  margin-top: 25px;
+}
+
+.ajuda2 {
+  padding: 50px 100px 20px 100px;
+  border-bottom: 1px black dashed;
+}
+  
+  .btajuda2 {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 16px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-top: 25px;
+  }
+
+  .ajuda3 {
+    padding: 50px 100px 20px 100px;
+border-bottom: 1px black dashed;
+    }
+    
+    .btajuda3 {
+      background-color: #008CBA;
+      border: none;
+      color: white;
+      padding: 16px 50px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 7px;
+      margin-top: 25px;
+    }
+
+    .transparencia {
+      padding: 50px 100px 20px 100px;
+      }
+      
+      .bttransparencia {
+        background-color: #008CBA;
+        border: none;
+        color: white;
+        padding: 16px 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 7px;
+        margin-top: 25px;
+      }
+
+/*/////////////////////@media///////////////////////////////*/
 @media (max-width: 900px) {
+
   .menucl {
     display: block;
   }
-  .navlink {
+  .navlink{
     display: none;
   }
   .idxbt {
