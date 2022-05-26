@@ -634,6 +634,37 @@ border-bottom: 1px black dashed;
         border-radius: 7px;
         margin-top: 25px;
       }
+/* //////////////////////  DARK MODE ///////////////////////// */
+.botao-flutuante {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 64px;
+  height: 64px;
+  transition: all 1s;
+}
+
+.botao-flutuante > img {
+  width: 100%;
+}
+
+.botao-flutuante:hover {
+  width: 96px;
+  height: 96px;
+}
+
+      .dark-mode {
+        background-color: #424948;
+      }
+      
+      .dark-mode > nav > a {
+        color: #fff;
+      }
+      
+      .dark-mode-main {
+        background: linear-gradient(#424948, #292d2c);
+        color: #fff;
+      }
 
 /*/////////////////////@media///////////////////////////////*/
 @media (max-width: 900px) {

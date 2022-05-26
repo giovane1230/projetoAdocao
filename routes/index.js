@@ -3,6 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+  console.log(req.cookies);
   res.render('index', { title: 'Express' });
 });
 
@@ -20,6 +21,14 @@ router.get('/cadastro', function(req, res, next) {
 
 router.get('/colabore', function(req, res, next) {
   res.render('colabore', { title: 'Express' });
+});
+
+router.get('/dark-mode', (req, res) => {
+  res.clearCookie('darkMode');
+  req.session.darkMode = !req.session.darkMode;
+
+  res.cookie('darkMode', req.session.darkMode);
+  res.redirect('/');
 });
 
 module.exports = router;

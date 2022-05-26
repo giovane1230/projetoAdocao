@@ -1,8 +1,10 @@
 const exemploModel = require('../models/exemploModels');
-const exemploServices = {
-    listAnimais: () => {
 
+const exemploService = {
+    ListaAnimais: async () => {
+      const animais = await exemploModel.Animais.findAll();
+      return animais;
     }
 }
 
-module.exports = exemploServices;
+module.exports = exemploService;
