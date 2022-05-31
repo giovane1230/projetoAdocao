@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Projeto Adoção</title>
+    <meta charset="UTF-8">
+    <meta name="vierport" content="width=device-width, initial-scale=1.0";>
+    <link rel="stylesheet" href="stylesheets\style.css">
+  </head>
+  <body>
+   <div class="login">
+        <img src="" alt="logoLogin">
+        <h1>Cadastrar novo amigo para Adoção</h1><br>
+        <p>Preencha os dados necessarios para fazer o cadastro do pet que voce gostaria de colocar para adoção em nosso site.</p>
+       <div class="caixalogin">
+        <form method="post" action="/">
+            <label for="nome">Nome do seu pet</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Digite o nome do pet" required>
+            <br>
+            <label for="especie">Espécie</label><br>
+            <select>
+                <option selected disabled>Espécie</option>
+                <option value="cachorro">Cachorro</option>
+                <option value="gato">Gato</option>
+                <option value="ave">Ave</option>
+                <option value="outro">Outros</option>
+            </select>
+            <br>
+            <label for="idade">Idade</label><br>
+            <input type="number" id="idade" name="idade" placeholder="Digite o nome do pet" required>
+            <br><br>
+            <label>Seu pet ja foi vacinado ?</label><br>
+            <label form="s">Sim</label>
+            <input type="radio" id="vacina" name="vacina" value="s"><br>
+            <label form="n">Não</label>
+            <input type="radio" id="vacina" name="vacina" value="n">
+            <br><br>
+            <label>Seu pet tem alguma necessidade especial ?</label><br>
+            <label form="s">Sim</label>
+            <input type="radio" id="especial" name="especial" value="s"><br>
+            <label form="n">Não</label>
+            <input type="radio" id="especial" name="especial" value="n">
+            <br><br>
+            <label>Quais são seus hobbies?</label>
+            <br>
+            <label for="pescar">Pescar</label>
+            <input type="checkbox" id="pescar" name="hobby" value="pescar">
+            <br>
+            <label for="correr">Correr</label>
+            <input type="checkbox" id="correr" name="hobby" value="correr">
+            <br>
+            <label for="yoga">Yoga</label>
+            <input type="checkbox" id="yoga" name="hobby" value="yoga">
+            <br><br>
+            <label>Envie um foto do seu pet</label><br>
+            <input type="file" name="imgPet" id="imgPet" accept=".jpg" required>
+            <br><br>
+            <button>Finalizar cadastro</button>
+          </form>
+       </div>
+          
+       </div>
+  </body>
+</html>

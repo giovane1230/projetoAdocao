@@ -4,7 +4,7 @@ const express = require('express');
 const router = express.Router();
 const controller = require('../controller/exemploController');
 const auth = require('../middlewares/auth');
-const exemploValid = require('../middlewares/exemploValidator');
+const exemploValid = require('../middlewares/exemploValid');
 
 router.get('/animal', controller.bichinho);
 router.get('/todos', controller.pegarTodos);

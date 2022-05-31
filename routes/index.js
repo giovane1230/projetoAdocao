@@ -1,5 +1,7 @@
 var express = require('express');
 var router = express.Router();
+var contatoController = require('../controller/contatoController');
+const loginController = require('../controller/loginController');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -29,6 +31,13 @@ router.get('/dark-mode', (req, res) => {
 
   res.cookie('darkMode', req.session.darkMode);
   res.redirect('/');
+});
+
+router.get('/contato', contatoController.contatoView);
+router.get('/confirmarcontato', contatoController.confirmarContato);
+
+router.get('/criando', function(req, res, next) {
+  res.render('criando', { title: 'Express' });
 });
 
 module.exports = router;
